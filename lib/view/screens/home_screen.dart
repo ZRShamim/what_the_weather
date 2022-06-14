@@ -79,10 +79,9 @@ class HomeScreen extends StatelessWidget {
                     )
                   ],
                 ),
-                Image.asset(
-                  'assets/weather_image/rainy_2d.png',
-                  width: 100,
-                ),
+                Image.network(
+                  'https://openweathermap.org/img/w/${weatherInfoController.icon}.png',
+                )
               ],
             ),
             const SizedBox(
@@ -229,10 +228,9 @@ class HourlyWeatherWidget extends StatelessWidget {
               Text(
                 '$temp \u2070C',
               ),
-              Image.asset(
-                'assets/weather_image/$icon.png',
-                width: 30,
-              ),
+              Image.network(
+                'https://openweathermap.org/img/w/$icon.png',
+              )
             ],
           ),
         ),

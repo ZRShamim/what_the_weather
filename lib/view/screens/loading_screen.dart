@@ -6,9 +6,10 @@ class LoadingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      backgroundColor: const Color(0xfff5cb42),
+      body: SizedBox(
         width: MediaQuery.of(context).size.width,
-        color: const Color(0xfff5cb42),
+        // color: const Color(0xfff5cb42),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
